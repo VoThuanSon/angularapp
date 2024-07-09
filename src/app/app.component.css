@@ -1,0 +1,13 @@
+.brand-gradient {
+    background: #0091ff;
+    background: -webkit-linear-gradient(to top,#0091ff,#32cd4c);
+    background: linear-gradient(to top,#0091ff,#32cd4c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.img-banner:hover{
+    box-shadow: 8px 8px 8px blue;
+    transform: scale(1.2);
+    transition: ease .2s;
+}

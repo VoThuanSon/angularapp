@@ -1,0 +1,61 @@
+<!-- Section: Design Block -->
+<section class="text-center login">
+    <!-- Background image -->
+    <div class="p-5 bg-image" style="
+          background-image: url('../../../assets/images/payment.jpg');
+          height: 300px;
+          "></div>
+    <!-- Background image -->
+    <div class="card mx-4 mx-md-5 shadow-5-strong bg-body-tertiary" style="
+          margin-top: -100px;
+          backdrop-filter: blur(30px);
+          ">
+        <div class="card-body py-5 px-md-5">
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-5">Sign In</h2>
+                    <form (ngSubmit)="submit()" [formGroup]="formLogin">
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input type="email" class="form-control" [formControl]="formLogin.controls.email"/>
+                            <label class="form-label">Email address</label>
+                            <div *ngIf="formLogin.controls.email.invalid && formLogin.controls.email.touched">
+                                <small *ngIf="formLogin.controls.email?.errors['pattern']" class="text-danger">
+                                    Emaill must be gmail.com 
+                                </small>
+                            </div>
+                        </div>
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <input type="password" class="form-control"[formControl]="formLogin.controls.password" />
+                            <label class="form-label">Password</label>
+                        </div>
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block mb-4" [disabled]="formLogin.invalid">
+                                Sign In
+                        </button>
+
+                        <!-- Register buttons -->
+                        <div class="text-center">
+                            <p>or sign in with:</p>
+                            <button type="button" class="btn btn-link btn-floating mx-1">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button type="button" class="btn btn-link btn-floating mx-1">
+                                <i class="fab fa-google"></i>
+                            </button>
+                            <button type="button" class="btn btn-link btn-floating mx-1">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button type="button" class="btn btn-link btn-floating mx-1">
+                                <i class="fab fa-github"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section: Design Block -->

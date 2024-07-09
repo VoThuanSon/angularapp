@@ -1,0 +1,5 @@
+.card:hover{
+    box-shadow: 8px 8px 8px blue;
+    transform: scaleY(1.2);
+    transition: ease .2s;
+}

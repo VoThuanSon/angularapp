@@ -1,0 +1,214 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "productName": "Nike A1",
+      "releaseDate": "March 19, 2016",
+      "description": "AJ1 and these low-cut sneakers are no exception",
+      "price": 19.95,
+      "imageUrl": "./assets/images/nike1.jpg",
+      "quantity": 1,
+      "rating": 4.2,
+      "brand": "Nike"
+    },
+    {
+      "id": "2",
+      "productName": "Nike A2",
+      "releaseDate": "March 19, 2116",
+      "description": "Responsive cushioning in the Pegasus provides an energised ride for everyday ",
+      "price": 29.95,
+      "imageUrl": "./assets/images/nike2.jpg",
+      "quantity": 1,
+      "rating": 3.2,
+      "brand": "Nike"
+    },
+    {
+      "id": "3",
+      "productName": "Nike A3",
+      "releaseDate": "March 19, 2016",
+      "description": "In love with the classic look of '80s basketball but have a thing for the fast-paced",
+      "price": 39.95,
+      "imageUrl": "./assets/images/nike3.jpg",
+      "quantity": 1,
+      "rating": 4.4,
+      "brand": "Nike"
+    },
+    {
+      "id": "4",
+      "productName": "Nike A4",
+      "releaseDate": "March 19, 2016",
+      "description": " This iteration combines smooth leather and easy-to-style colours for a vintage vibe.",
+      "price": 49.95,
+      "imageUrl": "./assets/images/nike4.jpg",
+      "quantity": 1,
+      "rating": 3.9,
+      "brand": "Nike"
+    },
+    {
+      "id": "5",
+      "productName": "Nike A5",
+      "releaseDate": "March 19, 2016",
+      "description": " This iteration combines smooth leather and easy-to-style colours for a vintage vibe.",
+      "price": 59.95,
+      "imageUrl": "./assets/images/nike5.jpg",
+      "quantity": 1,
+      "rating": 5,
+      "brand": "Nike"
+    },
+    {
+      "id": "6",
+      "productName": "Adidas A1",
+      "releaseDate": "March 8, 2016",
+      "description": " This iteration combines smooth leather and easy-to-style colours for a vintage vibe.",
+      "price": 32.99,
+      "imageUrl": "./assets/images/adidas1.jpg",
+      "quantity": 1,
+      "rating": 4.2,
+      "brand": "Adidas"
+    },
+    {
+      "id": "7",
+      "productName": "Adidas A2",
+      "releaseDate": "March 28, 2016",
+      "description": "The elevated hoops look then crowns your feet with its ultra-plush tongue.",
+      "price": 42.99,
+      "imageUrl": "./assets/images/adidas2.jpg",
+      "quantity": 1,
+      "rating": 4.5,
+      "brand": "Adidas"
+    },
+    {
+      "id": "8",
+      "productName": "Adidas A3",
+      "releaseDate": "March 3, 2016",
+      "description": "Raise the bar with the Nike Court Vision Alta. The modern design combines",
+      "price": 52.99,
+      "imageUrl": "./assets/images/adidas3.jpg",
+      "quantity": 1,
+      "rating": 4.6,
+      "brand": "Adidas"
+    },
+    {
+      "id": "9",
+      "productName": "Adidas A4",
+      "releaseDate": "March 2, 2016",
+      "description": "Leather adds durability while perforations on the toe add an airy aesthetic.",
+      "price": 62.99,
+      "imageUrl": "./assets/images/adidas4.jpg",
+      "quantity": 1,
+      "rating": 4.7,
+      "brand": "Adidas"
+    },
+    {
+      "id": "10",
+      "productName": "Adidas A5",
+      "releaseDate": "March 1, 2016",
+      "description": "Lifted foam midsole and sculpted heel add modern comfort.",
+      "price": 72.99,
+      "imageUrl": "./assets/images/adidas5.jpg",
+      "quantity": 1,
+      "rating": 4.1,
+      "brand": "Adidas"
+    },
+    {
+      "id": "11",
+      "productName": "Jordan A1",
+      "releaseDate": "May 21, 2016",
+      "description": "A classic remixed with at least 20% recycled materials",
+      "price": 82.9,
+      "imageUrl": "./assets/images/jordan1.jpg",
+      "quantity": 1,
+      "rating": 4.8,
+      "brand": "Jordan"
+    },
+    {
+      "id": "12",
+      "productName": "Jordan A2",
+      "releaseDate": "May 22, 2016",
+      "description": "The plush, low-cut collar keeps it sleek and comfortable for your world.",
+      "price": 84.9,
+      "imageUrl": "./assets/images/jordan2.jpg",
+      "quantity": 1,
+      "rating": 4.2,
+      "brand": "Jordan"
+    },
+    {
+      "id": "13",
+      "productName": "Jordan A3",
+      "releaseDate": "May 24, 2016",
+      "description": "Whenever you see the Nike Sunburst or the name Next Nature",
+      "price": 85.9,
+      "imageUrl": "./assets/images/jordan3.jpg",
+      "quantity": 1,
+      "rating": 4.5,
+      "brand": "Jordan"
+    },
+    {
+      "id": "14",
+      "productName": "Jordan A4",
+      "releaseDate": "May 26, 2016",
+      "description": "Using synthetic materials, the design features materials ",
+      "price": 81.9,
+      "imageUrl": "./assets/images/jordan4.jpg",
+      "quantity": 1,
+      "rating": 5,
+      "brand": "Jordan"
+    },
+    {
+      "id": "15",
+      "productName": "Jordan A5",
+      "releaseDate": "May 27, 2016",
+      "description": "One word: tradition. From heritage running to fashion phenom, its retro appeal",
+      "price": 82.9,
+      "imageUrl": "./assets/images/jordan5.jpg",
+      "quantity": 1,
+      "rating": 5,
+      "brand": "Jordan"
+    }
+  ],
+  "productCart": [
+    {
+      "id": "1",
+      "productName": "Nike A1",
+      "releaseDate": "March 19, 2016",
+      "description": "AJ1 and these low-cut sneakers are no exception",
+      "price": 19.95,
+      "imageUrl": "./assets/images/nike1.jpg",
+      "quantity": 1,
+      "rating": 4.2,
+      "brand": "Nike"
+    }
+  ],
+  "Users": [
+    {
+      "id": "a32e",
+      "email": "son124@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456"
+    },
+    {
+      "id": "734e",
+      "email": "son11@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456"
+    },
+    {
+      "id": "34e3",
+      "email": "s123@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456"
+    },
+    {
+      "id": "0cfa",
+      "email": "sonoggy@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456"
+    },
+    {
+      "id": "8e86",
+      "email": "r22@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456"
+    }
+  ]
+}

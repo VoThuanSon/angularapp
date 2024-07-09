@@ -1,0 +1,75 @@
+<section class="py-5 text-center">
+    <h1 class="text-center text-secondary mb-5">Products</h1>
+    <!-- All product -->
+    <div class="container ">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <h5 class="text-secondary">Search for<i class="bi bi-search ms-2"></i></h5>
+                <input type="text" placeholder="Tìm sản phẩm" [(ngModel)]="searching" (ngModelChange)="filter()"
+                    class="input form-control">
+                <!-- Filter Price -->
+                <h5 class="mt-5 text-secondary">Sorby <i class="bi bi-funnel"></i></h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="brand" id="item3" value="Nike"
+                        [(ngModel)]="brand">
+                    <label class="form-check-label">
+                        Nike
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="brand" id="item1" value="Adidas"
+                        [(ngModel)]="brand">
+                    <label class="form-check-label">
+                        Adidas
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="brand" id="item2" value="Jordan"
+                        [(ngModel)]="brand">
+                    <label class="form-check-label">
+                        Jordan
+                    </label>
+                </div>
+                <input type="range" min="0" max="100" name="price" id="" [(ngModel)]="price" (ngModelChange)="filter()">
+            </div>
+            <div class="col-md-3" *ngFor="let item of filter()">
+                <div class="card shadow-sm mb-3">
+                    <img [src]="item.imageUrl" alt="" class="card-img-top" [routerLink]="['detail',item.id]">
+                    <div class="card-body">
+                        <h3 class="fs-5">{{item.productName}}</h3>
+                        <p class="small fw-light">{{item.description}}</p>
+                        <button href="" class="btn btn-sm btn-info rounded-pill shadow-sm px-3" data-bs-toggle="modal"
+                            data-bs-target="#modalId" (click)="AddToCart(item)" routerLink="/cart">Buy</button>
+                        <button [routerLink]="['detail',item.id]"
+                            class="btn btn-sm btn-secondary rounded-pill shadow-sm px-3 ms-2">Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Modal buy success-->
+<div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+    aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">
+                    <i class="bi bi-bag-check-fill"></i>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="../../assets/images/thank.jpg" class="card-img-top" alt="Gears">
+                <h4 class='font-weight-light mt-4'>Well done!</h4>
+                <p class="mb-0">This product has been add to cart.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const myModal = new bootstrap.Modal(
+        document.getElementById("modalId"),
+        options,
+    );
+</script>

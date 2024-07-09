@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from './auth/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'doan';
+  constructor(private authService: AuthService) { }
+  isAuthenticated() {
+    return Boolean(sessionStorage.getItem('authLogin'));
+  }
+  logout() {
+    this.authService.logout()
+  }
+
 }
